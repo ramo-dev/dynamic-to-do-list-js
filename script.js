@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const taskList = document.getElementById('task-list');
 
     // Function to add a task
-    const addTask = () => {
+    function addTask () {
         const taskText = taskInput.value.trim();
         
         if (taskText === "") {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const removeButton = document.createElement('button');
         removeButton.textContent = 'Remove';
-        removeButton.className = 'remove-btn';
+        removeButton.classList.add = 'remove-btn';
 
        
         removeButton.onclick(function() {
